@@ -46,7 +46,7 @@ export default function AnalyticsPage() {
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-indigo-50">
+    <div className="min-h-screen bg-linear-to-b from-gray-50 to-indigo-50">
       {/* Header */}
       <header className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4 py-4">
@@ -59,7 +59,7 @@ export default function AnalyticsPage() {
                 <ArrowUpRight className="w-5 h-5 text-gray-600 rotate-180" />
               </Link>
               <div className="flex items-center space-x-3">
-                <div className="p-2 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl">
+                <div className="p-2 bg-linear-to-r from-indigo-500 to-purple-600 rounded-xl">
                   <BarChart3 className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -82,7 +82,7 @@ export default function AnalyticsPage() {
                   ))}
                 </select>
               </button>
-              <button className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2">
+              <button className="px-4 py-2 bg-linear-to-r from-indigo-500 to-purple-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2">
                 <Download className="w-4 h-4" />
                 Export Report
               </button>
@@ -130,7 +130,7 @@ export default function AnalyticsPage() {
           ].map((kpi) => (
             <div key={kpi.label} className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
               <div className="flex items-center justify-between mb-4">
-                <div className={`p-3 rounded-lg bg-gradient-to-r ${kpi.color}`}>
+                <div className={`p-3 rounded-lg bg-linear-to-r ${kpi.color}`}>
                   <kpi.icon className="w-6 h-6 text-white" />
                 </div>
                 <span className="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium">
@@ -192,7 +192,7 @@ export default function AnalyticsPage() {
                       </div>
 
                       <div className="grid grid-cols-2 gap-4">
-                        <div className="bg-gradient-to-r from-emerald-50 to-green-50 p-4 rounded-xl">
+                        <div className="bg-linear-to-r from-emerald-50 to-green-50 p-4 rounded-xl">
                           <div className="flex items-center justify-between mb-2">
                             <span className="text-sm font-medium text-gray-700">Total Savings</span>
                             <DollarSign className="w-4 h-4 text-emerald-600" />
@@ -203,7 +203,7 @@ export default function AnalyticsPage() {
                           <div className="text-xs text-gray-500">Accumulated savings</div>
                         </div>
 
-                        <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-xl">
+                        <div className="bg-linear-to-r from-purple-50 to-pink-50 p-4 rounded-xl">
                           <div className="flex items-center justify-between mb-2">
                             <span className="text-sm font-medium text-gray-700">Loans Disbursed</span>
                             <TrendingUp className="w-4 h-4 text-purple-600" />
@@ -260,10 +260,10 @@ export default function AnalyticsPage() {
                       <div
                         className={`h-full rounded-full transition-all duration-1000 ${
                           kpi.current >= kpi.target 
-                            ? 'bg-gradient-to-r from-emerald-500 to-green-500'
+                            ? 'bg-linear-to-r from-emerald-500 to-green-500'
                             : kpi.current >= kpi.target * 0.8
-                            ? 'bg-gradient-to-r from-amber-500 to-orange-500'
-                            : 'bg-gradient-to-r from-red-500 to-pink-500'
+                            ? 'bg-linear-to-r from-amber-500 to-orange-500'
+                            : 'bg-linear-to-r from-red-500 to-pink-500'
                         }`}
                         style={{ width: `${(kpi.current / kpi.target) * 100}%` }}
                       />
@@ -319,7 +319,7 @@ export default function AnalyticsPage() {
             </div>
 
             {/* Growth Insights */}
-            <div className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl p-6 text-white">
+            <div className="bg-linear-to-br from-indigo-500 to-purple-600 rounded-2xl p-6 text-white">
               <h3 className="text-lg font-bold mb-6">Growth Insights</h3>
               
               <div className="space-y-4">

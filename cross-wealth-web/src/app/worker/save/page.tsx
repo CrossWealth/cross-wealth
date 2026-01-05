@@ -85,7 +85,7 @@ const savingStrategies = [
     description: 'Smart algorithm adjusts savings based on your income patterns',
     icon: Zap,
     benefit: '+15% efficiency',
-    color: 'bg-gradient-to-r from-cyan-500 to-blue-500'
+    color: 'bg-linear-to-r from-cyan-500 to-blue-500'
   },
   {
     id: 2,
@@ -93,7 +93,7 @@ const savingStrategies = [
     description: 'Join savings circle with others for better returns',
     icon: Shield,
     benefit: '2.5% APY',
-    color: 'bg-gradient-to-r from-purple-500 to-pink-500'
+    color: 'bg-linear-to-r from-purple-500 to-pink-500'
   },
   {
     id: 3,
@@ -101,7 +101,7 @@ const savingStrategies = [
     description: 'Automatically allocate to specific goals',
     icon: Target,
     benefit: 'Faster completion',
-    color: 'bg-gradient-to-r from-emerald-500 to-green-500'
+    color: 'bg-linear-to-r from-emerald-500 to-green-500'
   }
 ];
 
@@ -111,7 +111,7 @@ export default function SavePage() {
   const [frequency, setFrequency] = useState('weekly');
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-gray-50 pb-20">
+    <div className="min-h-screen bg-linear-to-b from-blue-50 to-gray-50 pb-20">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
         <div className="container mx-auto px-4 py-3">
@@ -124,14 +124,14 @@ export default function SavePage() {
                 <ArrowLeft className="w-5 h-5 text-gray-600" />
               </Link>
               <div className="flex items-center space-x-2">
-                <div className="p-2 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl">
+                <div className="p-2 bg-linear-to-r from-cyan-500 to-blue-600 rounded-xl">
                   <PiggyBank className="w-6 h-6 text-white" />
                 </div>
                 <h1 className="text-xl font-bold text-gray-900">Save & Grow</h1>
               </div>
             </div>
             
-            <div className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-emerald-100 to-green-100 rounded-full">
+            <div className="flex items-center space-x-2 px-4 py-2 bg-linear-to-r from-emerald-100 to-green-100 rounded-full">
               <Sparkles className="w-4 h-4 text-emerald-600" />
               <span className="text-sm font-medium text-emerald-700">AI Savings Assistant</span>
             </div>
@@ -150,7 +150,7 @@ export default function SavePage() {
                   <h2 className="text-xl font-bold text-gray-900">Your Savings Goals</h2>
                   <p className="text-gray-600">Track progress towards financial targets</p>
                 </div>
-                <button className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2">
+                <button className="px-4 py-2 bg-linear-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2">
                   <PlusCircle className="w-4 h-4" />
                   New Goal
                 </button>
@@ -198,7 +198,7 @@ export default function SavePage() {
                       </div>
                       <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
                         <div
-                          className={`h-full bg-gradient-to-r ${goal.color} rounded-full transition-all duration-1000`}
+                          className={`h-full bg-linear-to-r ${goal.color} rounded-full transition-all duration-1000`}
                           style={{ width: `${goal.progress}%` }}
                         />
                       </div>
@@ -209,7 +209,7 @@ export default function SavePage() {
                       <button className="flex-1 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg font-medium hover:bg-gray-200 transition-colors text-sm">
                         Add Funds
                       </button>
-                      <button className="flex-1 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity text-sm">
+                      <button className="flex-1 px-4 py-2 bg-linear-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity text-sm">
                         Boost Savings
                       </button>
                     </div>
@@ -239,7 +239,7 @@ export default function SavePage() {
                       <div className="flex items-center space-x-4">
                         <div className={`p-3 rounded-lg ${
                           option.active
-                            ? 'bg-gradient-to-r from-cyan-500 to-blue-600'
+                            ? 'bg-linear-to-r from-cyan-500 to-blue-600'
                             : 'bg-gray-100'
                         }`}>
                           <Icon className={`w-5 h-5 ${option.active ? 'text-white' : 'text-gray-600'}`} />
@@ -304,7 +304,7 @@ export default function SavePage() {
                   </div>
 
                   <div className="flex items-end">
-                    <button className="w-full px-6 py-3 bg-gradient-to-r from-emerald-500 to-green-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity">
+                    <button className="w-full px-6 py-3 bg-linear-to-r from-emerald-500 to-green-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity">
                       Activate Auto-save
                     </button>
                   </div>
@@ -316,7 +316,7 @@ export default function SavePage() {
           {/* Right Column - Strategies & AI Assistant */}
           <div className="space-y-8">
             {/* AI Savings Assistant */}
-            <div className="bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl p-6 text-white">
+            <div className="bg-linear-to-br from-cyan-500 to-blue-600 rounded-2xl p-6 text-white">
               <div className="flex items-center space-x-3 mb-6">
                 <div className="p-2 bg-white/20 rounded-lg">
                   <Sparkles className="w-6 h-6" />

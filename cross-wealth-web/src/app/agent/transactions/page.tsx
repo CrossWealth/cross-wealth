@@ -129,7 +129,7 @@ export default function TransactionsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-blue-50">
+    <div className="min-h-screen bg-linear-to-b from-gray-50 to-blue-50">
       {/* Header */}
       <header className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4 py-4">
@@ -142,7 +142,7 @@ export default function TransactionsPage() {
                 <ArrowUpRight className="w-5 h-5 text-gray-600 rotate-180" />
               </Link>
               <div className="flex items-center space-x-3">
-                <div className="p-2 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl">
+                <div className="p-2 bg-linear-to-r from-cyan-500 to-blue-600 rounded-xl">
                   <DollarSign className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -157,7 +157,7 @@ export default function TransactionsPage() {
                 <Calendar className="w-4 h-4" />
                 Last 7 Days
               </button>
-              <button className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2">
+              <button className="px-4 py-2 bg-linear-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2">
                 <Download className="w-4 h-4" />
                 Export
               </button>
@@ -201,7 +201,7 @@ export default function TransactionsPage() {
           ].map((stat) => (
             <div key={stat.label} className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
               <div className="flex items-center justify-between mb-4">
-                <div className={`p-3 rounded-lg bg-gradient-to-r ${stat.color}`}>
+                <div className={`p-3 rounded-lg bg-linear-to-r ${stat.color}`}>
                   <stat.icon className="w-6 h-6 text-white" />
                 </div>
                 <span className="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium">
@@ -257,7 +257,7 @@ export default function TransactionsPage() {
                     onClick={() => setSelectedType(type.id)}
                     className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                       selectedType === type.id
-                        ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white'
+                        ? 'bg-linear-to-r from-cyan-500 to-blue-600 text-white'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                     }`}
                   >
@@ -404,7 +404,7 @@ export default function TransactionsPage() {
             </div>
 
             {/* Quick Actions */}
-            <div className="bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl p-6 text-white">
+            <div className="bg-linear-to-br from-cyan-500 to-blue-600 rounded-2xl p-6 text-white">
               <h3 className="text-lg font-bold mb-6">Quick Actions</h3>
               
               <div className="space-y-4">

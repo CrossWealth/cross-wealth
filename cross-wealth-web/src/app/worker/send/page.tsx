@@ -56,7 +56,7 @@ export default function SendPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-gray-50 pb-20">
+    <div className="min-h-screen bg-linear-to-b from-blue-50 to-gray-50 pb-20">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
         <div className="container mx-auto px-4 py-3">
@@ -69,14 +69,14 @@ export default function SendPage() {
                 <ArrowLeft className="w-5 h-5 text-gray-600" />
               </Link>
               <div className="flex items-center space-x-2">
-                <div className="p-2 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl">
+                <div className="p-2 bg-linear-to-r from-cyan-500 to-blue-600 rounded-xl">
                   <Send className="w-6 h-6 text-white" />
                 </div>
                 <h1 className="text-xl font-bold text-gray-900">Send Money</h1>
               </div>
             </div>
             
-            <div className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-cyan-100 to-blue-100 rounded-full">
+            <div className="flex items-center space-x-2 px-4 py-2 bg-linear-to-r from-cyan-100 to-blue-100 rounded-full">
               <Zap className="w-4 h-4 text-cyan-600" />
               <span className="text-sm font-medium text-cyan-700">$0 Gas Fees</span>
             </div>
@@ -92,7 +92,7 @@ export default function SendPage() {
               <div key={stepNum} className="flex flex-col items-center flex-1">
                 <div className={`w-10 h-10 rounded-full flex items-center justify-center mb-2 transition-all duration-300 ${
                   step >= stepNum
-                    ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white scale-110'
+                    ? 'bg-linear-to-r from-cyan-500 to-blue-600 text-white scale-110'
                     : 'bg-gray-200 text-gray-400'
                 }`}>
                   {step > stepNum ? (
@@ -116,7 +116,7 @@ export default function SendPage() {
           <div className="relative mt-2">
             <div className="absolute top-0 left-0 right-0 h-1 bg-gray-200" />
             <div
-              className="absolute top-0 left-0 h-1 bg-gradient-to-r from-cyan-500 to-blue-600 transition-all duration-500"
+              className="absolute top-0 left-0 h-1 bg-linear-to-r from-cyan-500 to-blue-600 transition-all duration-500"
               style={{ width: `${((step - 1) / 3) * 100}%` }}
             />
           </div>
@@ -314,7 +314,7 @@ export default function SendPage() {
           {/* Right Column - Summary & Methods */}
           <div className="space-y-8">
             {/* Transfer Summary */}
-            <div className="bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl p-6 text-white">
+            <div className="bg-linear-to-br from-cyan-500 to-blue-600 rounded-2xl p-6 text-white">
               <div className="flex items-center space-x-3 mb-6">
                 <div className="p-2 bg-white/20 rounded-lg">
                   <TrendingUp className="w-6 h-6" />
@@ -378,7 +378,7 @@ export default function SendPage() {
                     >
                       <div className="flex items-center justify-between mb-3">
                         <div className="flex items-center space-x-3">
-                          <div className={`p-2 rounded-lg bg-gradient-to-r ${method.color}`}>
+                          <div className={`p-2 rounded-lg bg-linear-to-r ${method.color}`}>
                             <Icon className="w-5 h-5 text-white" />
                           </div>
                           <div>
@@ -408,7 +408,7 @@ export default function SendPage() {
             {/* Auto-save Feature */}
             <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
               <div className="flex items-center space-x-3 mb-4">
-                <div className="p-2 bg-gradient-to-r from-emerald-100 to-green-100 rounded-lg">
+                <div className="p-2 bg-linear-to-r from-emerald-100 to-green-100 rounded-lg">
                   <Sparkles className="w-5 h-5 text-emerald-600" />
                 </div>
                 <div>

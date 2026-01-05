@@ -46,7 +46,7 @@ export default function OnboardingPage() {
   const [idType, setIdType] = useState('national_id');
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-blue-50">
+    <div className="min-h-screen bg-linear-to-b from-gray-50 to-blue-50">
       {/* Header */}
       <header className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4 py-4">
@@ -59,7 +59,7 @@ export default function OnboardingPage() {
                 <ArrowLeft className="w-5 h-5 text-gray-600" />
               </Link>
               <div className="flex items-center space-x-3">
-                <div className="p-2 bg-gradient-to-r from-emerald-500 to-green-600 rounded-xl">
+                <div className="p-2 bg-linear-to-r from-emerald-500 to-green-600 rounded-xl">
                   <UserPlus className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -74,7 +74,7 @@ export default function OnboardingPage() {
                 <Download className="w-4 h-4" />
                 Template
               </button>
-              <button className="px-4 py-2 bg-gradient-to-r from-emerald-500 to-green-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity">
+              <button className="px-4 py-2 bg-linear-to-r from-emerald-500 to-green-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity">
                 Save & Continue
               </button>
             </div>
@@ -97,7 +97,7 @@ export default function OnboardingPage() {
                 {/* Progress Line */}
                 <div className="absolute top-5 left-0 right-0 h-0.5 bg-gray-200" />
                 <div 
-                  className="absolute top-5 left-0 h-0.5 bg-gradient-to-r from-emerald-500 to-green-600 transition-all duration-500"
+                  className="absolute top-5 left-0 h-0.5 bg-linear-to-r from-emerald-500 to-green-600 transition-all duration-500"
                   style={{ width: `${((currentStep - 1) / (steps.length - 1)) * 100}%` }}
                 />
 
@@ -112,7 +112,7 @@ export default function OnboardingPage() {
                       <div key={step.id} className="flex flex-col items-center">
                         <div className={`relative z-10 w-12 h-12 rounded-full flex items-center justify-center mb-3 transition-all duration-300 ${
                           isCompleted 
-                            ? 'bg-gradient-to-r from-emerald-500 to-green-600 text-white shadow-lg scale-110'
+                            ? 'bg-linear-to-r from-emerald-500 to-green-600 text-white shadow-lg scale-110'
                             : isCurrent
                             ? 'bg-white border-2 border-emerald-500 text-emerald-600 shadow-md'
                             : 'bg-gray-100 text-gray-400'
@@ -162,7 +162,7 @@ export default function OnboardingPage() {
                             <div className="flex flex-col items-center text-center">
                               <div className={`p-3 rounded-lg mb-3 ${
                                 selectedType === type.id
-                                  ? 'bg-gradient-to-r from-emerald-500 to-green-600'
+                                  ? 'bg-linear-to-r from-emerald-500 to-green-600'
                                   : 'bg-gray-100'
                               }`}>
                                 <TypeIcon className={`w-6 h-6 ${
@@ -219,7 +219,7 @@ export default function OnboardingPage() {
                       <Scan className="w-12 h-12 text-gray-400 mx-auto mb-4" />
                       <p className="text-gray-600 mb-2">Scan or take photo of ID document</p>
                       <p className="text-sm text-gray-500 mb-4">Supported: JPG, PNG, PDF (Max 5MB)</p>
-                      <button className="px-6 py-2 bg-gradient-to-r from-emerald-500 to-green-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity">
+                      <button className="px-6 py-2 bg-linear-to-r from-emerald-500 to-green-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity">
                         Capture Image
                       </button>
                     </div>
@@ -247,7 +247,7 @@ export default function OnboardingPage() {
                 </button>
                 <button
                   onClick={() => setCurrentStep(Math.min(steps.length, currentStep + 1))}
-                  className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-green-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2"
+                  className="px-6 py-3 bg-linear-to-r from-emerald-500 to-green-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2"
                 >
                   Continue to Next Step
                   <ArrowLeft className="w-4 h-4 rotate-180" />
@@ -308,7 +308,7 @@ export default function OnboardingPage() {
             </div>
 
             {/* Quick Tools */}
-            <div className="bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl p-6 text-white">
+            <div className="bg-linear-to-br from-emerald-500 to-green-600 rounded-2xl p-6 text-white">
               <h3 className="text-lg font-bold mb-6">Quick Tools</h3>
               
               <div className="space-y-4">

@@ -35,13 +35,13 @@ import {
     ];
   
     return (
-      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-indigo-50">
+      <div className="min-h-screen bg-linear-to-b from-gray-50 to-indigo-50">
         {/* Partner Header */}
         <header className="bg-white border-b border-gray-200">
           <div className="container mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-3">
-                <div className="p-2 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl">
+                <div className="p-2 bg-linear-to-r from-indigo-500 to-purple-600 rounded-xl">
                   <Globe className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -72,7 +72,7 @@ import {
             {impactMetrics.map((metric) => (
               <div key={metric.label} className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
                 <div className="flex items-center justify-between mb-4">
-                  <div className="p-3 rounded-lg bg-gradient-to-r from-indigo-50 to-purple-50">
+                  <div className="p-3 rounded-lg bg-linear-to-r from-indigo-50 to-purple-50">
                     <TrendingUp className="w-6 h-6 text-indigo-600" />
                   </div>
                   <span className="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium">
@@ -153,7 +153,7 @@ import {
             {/* Right Column */}
             <div className="space-y-8">
               {/* Key Metrics */}
-              <div className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl p-6 text-white">
+              <div className="bg-linear-to-br from-indigo-500 to-purple-600 rounded-2xl p-6 text-white">
                 <div className="flex items-center justify-between mb-6">
                   <h3 className="text-xl font-bold">Key Performance Indicators</h3>
                   <Target className="w-6 h-6" />

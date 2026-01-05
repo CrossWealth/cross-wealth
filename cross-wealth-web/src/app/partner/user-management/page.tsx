@@ -52,7 +52,7 @@ const users = [
     creditScore: 745,
     lastActive: '2 hours ago',
     kycStatus: 'verified',
-    avatarColor: 'bg-gradient-to-r from-cyan-500 to-blue-500'
+    avatarColor: 'bg-linear-to-r from-cyan-500 to-blue-500'
   },
   {
     id: 'USR-002',
@@ -66,7 +66,7 @@ const users = [
     creditScore: 680,
     lastActive: '1 day ago',
     kycStatus: 'verified',
-    avatarColor: 'bg-gradient-to-r from-emerald-500 to-green-500'
+    avatarColor: 'bg-linear-to-r from-emerald-500 to-green-500'
   },
   {
     id: 'USR-003',
@@ -80,7 +80,7 @@ const users = [
     creditScore: 710,
     lastActive: '3 days ago',
     kycStatus: 'pending',
-    avatarColor: 'bg-gradient-to-r from-purple-500 to-pink-500'
+    avatarColor: 'bg-linear-to-r from-purple-500 to-pink-500'
   },
   {
     id: 'USR-004',
@@ -94,7 +94,7 @@ const users = [
     creditScore: 780,
     lastActive: '1 week ago',
     kycStatus: 'verified',
-    avatarColor: 'bg-gradient-to-r from-amber-500 to-orange-500'
+    avatarColor: 'bg-linear-to-r from-amber-500 to-orange-500'
   },
   {
     id: 'USR-005',
@@ -108,7 +108,7 @@ const users = [
     creditScore: 620,
     lastActive: '2 weeks ago',
     kycStatus: 'expired',
-    avatarColor: 'bg-gradient-to-r from-red-500 to-rose-500'
+    avatarColor: 'bg-linear-to-r from-red-500 to-rose-500'
   },
 ];
 
@@ -129,7 +129,7 @@ export default function UserManagementPage() {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-indigo-50">
+    <div className="min-h-screen bg-linear-to-b from-gray-50 to-indigo-50">
       {/* Header */}
       <header className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4 py-4">
@@ -142,7 +142,7 @@ export default function UserManagementPage() {
                 <ArrowUpRight className="w-5 h-5 text-gray-600 rotate-180" />
               </Link>
               <div className="flex items-center space-x-3">
-                <div className="p-2 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl">
+                <div className="p-2 bg-linear-to-r from-indigo-500 to-purple-600 rounded-xl">
                   <Users className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -157,7 +157,7 @@ export default function UserManagementPage() {
                 <Filter className="w-4 h-4" />
                 Advanced Filters
               </button>
-              <button className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2">
+              <button className="px-4 py-2 bg-linear-to-r from-indigo-500 to-purple-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2">
                 <UserPlus className="w-4 h-4" />
                 Add User
               </button>
@@ -201,7 +201,7 @@ export default function UserManagementPage() {
           ].map((stat) => (
             <div key={stat.label} className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
               <div className="flex items-center justify-between mb-4">
-                <div className={`p-3 rounded-lg bg-gradient-to-r ${stat.color}`}>
+                <div className={`p-3 rounded-lg bg-linear-to-r ${stat.color}`}>
                   <stat.icon className="w-6 h-6 text-white" />
                 </div>
                 <span className="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium">
@@ -256,7 +256,7 @@ export default function UserManagementPage() {
                     onClick={() => setSelectedType(type.id)}
                     className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                       selectedType === type.id
-                        ? 'bg-gradient-to-r from-indigo-500 to-purple-600 text-white'
+                        ? 'bg-linear-to-r from-indigo-500 to-purple-600 text-white'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                     }`}
                   >
@@ -527,7 +527,7 @@ export default function UserManagementPage() {
             </div>
 
             {/* User Segments */}
-            <div className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl p-6 text-white">
+            <div className="bg-linear-to-br from-indigo-500 to-purple-600 rounded-2xl p-6 text-white">
               <h3 className="text-lg font-bold mb-6">User Segments</h3>
               
               <div className="space-y-4">

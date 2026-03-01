@@ -1,0 +1,52 @@
+# Node dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime files
+.pids
+*.pid
+*.seed
+*.pid.lock
+
+# Environment
+.env
+.env.*.local
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Coverage
+coverage/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional npm cache folder
+.npm
+
+# Yarn PnP
+.pnp.*
+
+# Docker
+.dockerignore
+

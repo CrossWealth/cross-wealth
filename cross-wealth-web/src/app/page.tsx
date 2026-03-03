@@ -1,5 +1,6 @@
 import { ArrowRight, Shield, Globe, Zap, Users, Lock, Sparkles } from 'lucide-react';
 import Link from 'next/link';
+//Just a comment
 
 export default function HomePage() {
   return (
